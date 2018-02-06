@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/happy-choice"); //mongodb://localhost/fullstack-jeopardy
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mealticket"); //mongodb://localhost/fullstack-jeopardy
 
 const connection = mongoose.connection;
 connection.on('connected', () => {
