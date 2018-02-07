@@ -1,91 +1,138 @@
-import React from "react"
-import './food.css';
+import React from "react";
+import {
+  Form, Select, InputNumber, Input, Switch, Radio,
+  Slider, Button, Upload, Icon, Rate,
+} from 'antd';
+const FormItem = Form.Item;
+const Option = Select.Option;
+const RadioButton = Radio.Button;
+const RadioGroup = Radio.Group;
+const FormItem = Form.Item;
 
-const Food = () =>
+class App extends React.Component {
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        console.log('Received values of form: ', values);
+      }
+    });
+  }
+  handleSelectChange = (value) => {
+    console.log(value);
+    this.props.form.setFieldsValue({
+      note: `Hi, ${value === 'male' ? 'man' : 'lady'}!`,
+    });
+  }
+  class Demo extends React.Component {
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        console.log('Received values of form: ', values);
+      }
+    });
+  }
+  normFile = (e) => {
+    console.log('Upload event:', e);
+    if (Array.isArray(e)) {
+      return e;
+    }
+    return e && e.fileList;
+  }
 
-<food class="page-food">
-<div class="container">
-  <div class="row">
-    <div class="col l6 s12">
-      
-      <img id="top" src="top.png" alt="">
-      <div id="form_container">
-  
-        <h1><a>Untitled Form</a></h1>
-        <form id="form_70679" class="appnitro" enctype="multipart/form-data" method="post" action="">
-        <div class="form_description">
-        <h2>Untitled Form</h2>
-        <p>This is your form description. Click here to edit.</p>
-      </div>            
-      <ul >
-      
-          <li id="li_5" >
-    <label class="description" for="element_5">Drop Down </label>
-    <div>
-    <select class="element select medium" id="element_5" name="element_5"> 
-      <option value="" selected="selected"></option>
-<option value="1" >First option</option>
-<option value="2" >Second option</option>
-<option value="3" >Third option</option>
+  render() {
+    const { getFieldDecorator } = this.props.form;
+    return (
+      <Form onSubmit={this.handleSubmit}>
+        <FormItem
+          label="product"
+          labelCol={{ span: 5 }}
+          wrapperCol={{ span: 12 }}
+        >
+          {getFieldDecorator('product', {
+            rules: [{ required: true, message: 'Please input your product name!' }],
+          })(
+            <Input />
+          )}
+        </FormItem>
+        <FormItem
+          label="Category"
+          labelCol={{ span: 5 }}
+          wrapperCol={{ span: 12 }}
+        >
+          {getFieldDecorator('category', {
+            rules: [{ required: true, message: 'Please select your category!' }],
+          })(
+            <Select
+              placeholder="Select a option and change input text above"
+              onChange={this.handleSelectChange}
+            >
+              <Option value="Baked Goods">Baked Goods</Option>
+              <Option value="Desserts">Desserts</Option>
+              <Option value="Ethnic Foods">Ethnic Foods</Option>
+            </Select>
+          )}
+        </FormItem>
+        <FormItem
+          wrapperCol={{ span: 12, offset: 5 }}
+        >
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
+        </FormItem>
+        <FormItem
+          label="product"
+          labelCol={{ span: 5 }}
+          wrapperCol={{ span: 12 }}
+        >
+          {getFieldDecorator('product', {
+            rules: [{ required: true, message: 'Please input your product description!' }],
+          })(
+            <Input />
+          )}
+        </FormItem>
 
-    </select>
-    </div> 
-    </li>   <li id="li_1" >
-    <label class="description" for="element_1">Text </label>
-    <div>
-      <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
-    </div> 
-    </li>   <li id="li_2" >
-    <label class="description" for="element_2">Paragraph </label>
-    <div>
-      <textarea id="element_2" name="element_2" class="element textarea medium"></textarea> 
-    </div> 
-    </li>   <li id="li_3" >
-    <label class="description" for="element_3">Price </label>
-    <span class="symbol">$</span>
-    <span>
-      <input id="element_3_1" name="element_3_1" class="element text currency" size="10" value="" type="text" /> .    
-      <label for="element_3_1">Dollars</label>
-    </span>
-    <span>
-      <input id="element_3_2" name="element_3_2" class="element text" size="2" maxlength="2" value="" type="text" />
-      <label for="element_3_2">Cents</label>
-    </span>
-     
-    </li>   <li id="li_6" >
-    <label class="description" for="element_6">Checkboxes </label>
-    <span>
-      <input id="element_6_1" name="element_6_1" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_6_1">First option</label>
-<input id="element_6_2" name="element_6_2" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_6_2">Second option</label>
-<input id="element_6_3" name="element_6_3" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_6_3">Third option</label>
+        <FormItem
+          {...formItemLayout}
+          label="Cost"
+        >
+          {getFieldDecorator('input-number', { initialValue: 3 })(
+            <InputNumber min={1} max={500} />
+          )}
+          <span className="ant-form-text"> dollars</span>
+        </FormItem>
 
-    </span> 
-    </li>   <li id="li_4" >
-    <label class="description" for="element_4">Upload a File </label>
-    <div>
-      <input id="element_4" name="element_4" class="element file" type="file"/> 
-    </div>  
-    </li>
-      
-          <li class="buttons">
-          <input type="hidden" name="form_id" value="70679" />
-          
-        <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-    </li>
-      </ul>
-    </form> 
-    <div id="footer">
-      Generated by <a href="http://www.phpform.org">pForm</a>
-    </div>
-  </div>
-  <img id="bottom" src="bottom.png" alt="">
+        <FormItem
+          {...formItemLayout}
+          label="Delivery?"
+        >
+          {getFieldDecorator('switch', { valuePropName: 'checked' })(
+            <Switch />
+          )}
+        </FormItem>
+        
+         <FormItem
+          {...formItemLayout}
+          label="Upload an Image"
+        >
+          {getFieldDecorator('upload', {
+            valuePropName: 'fileList',
+            getValueFromEvent: this.normFile,
+          })(
+            <Upload name="logo" action="/upload.do" listType="picture">
+              <Button>
+                <Icon type="upload" /> Click to upload an image.
+              </Button>
+            </Upload>
+          )}
+        </FormItem>
 
-    </div>
-  </div>
-</div>
-</food>
+      </Form>
+    );
+  }
+}
 
-export default Food;
+const WrappedApp = Form.create()(App);
+
+export default WrappedApp;

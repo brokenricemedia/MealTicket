@@ -24,6 +24,7 @@
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
-    "mongoose": "^5.0.3"
+    "mongoose": "^5.0.3",
+    "react-dynamic-forms": "^0.15.0"
   }
 }
