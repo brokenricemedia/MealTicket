@@ -8,8 +8,8 @@ const chefSchema = new Schema({
     },
     firstname:{
       type: String
-    }
-    DBA:{
+    },
+    dba: {
       type: String
     },
     
@@ -38,7 +38,7 @@ const chefSchema = new Schema({
       type: String
     },
     food: {
-    type: Schema.Types.contactEmail,
+    type: Schema.Types.ObjectId,
     ref: "Food"
     }
 
@@ -52,4 +52,7 @@ const Chef = mongoose.model("Chef", chefSchema);
 module.exports = Chef;
 
 
-
+// note: {
+//     type: Schema.Types.ObjectId,
+//     ref: "Note"
+//   }
