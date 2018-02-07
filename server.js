@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const routes = require("./routes");
 const app = express();
 
 const db = require("./models");
@@ -25,6 +26,8 @@ app.use(express.static(__dirname + '/client/build/'));
 app.get('/', (req,res) => {
     res.sendFile(__dirname + '/client/build/index.html')
   })
+
+app.use(routes);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
