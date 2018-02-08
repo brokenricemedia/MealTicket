@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'antd/dist/antd.css';
-import './components/forms/index.css';
+import './components/forms/forms.css';
 import Forms from "./components/forms";
 
 class App extends Component {
