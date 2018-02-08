@@ -1,4 +1,4 @@
-# MealTicket
+# The Meal Ticket Company
 
 ## Overview
 
