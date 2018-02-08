@@ -1,48 +1,28 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const chefSchema = new Schema({
-  
-    lastName: {
+
+    firstname:{
     type: String,
     required: true
     },
-    firstname:{
-      type: String
+    lastname: {
+    type: String,
+    required: true
     },
-    dba: {
-      type: String
-    },
-    
-    contactPhone: {
-      type: Number,
-      required: true
-    },
-    
-    contactEmail: {
+    email:{
       type: String,
       required: true,
       unique: true
     },
-    contactWebsite: {
-      type: String
-    },
-  
-     foodVendorLicense: {
+    username:{
       type: String,
       required: true
-    },  
-    productType:{
-      type: String
-    },
-    deliveryPickupOptions:{
-      type: String
-    },
-    food: {
-    type: Schema.Types.ObjectId,
-    ref: "Food"
-    }
-
-
+      },
+    password:{
+      type: String,
+      required: true
+      }    
 });
 
 // This creates our model from the above schema, using mongoose's model method

@@ -11,8 +11,10 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
+
         <header className="App-header">   
           <h1 className="App-title">Welcome to Meal Ticket!</h1>
+
         </header>
         <Forms />
       </div>
