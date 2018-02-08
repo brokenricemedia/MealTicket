@@ -88,6 +88,38 @@ class RegistrationForm extends React.Component {
 
     return (
       <Form onSubmit={this.handleSubmit}>
+              <FormItem
+          {...formItemLayout}
+          label="firstName"
+        >
+          {getFieldDecorator('name', {
+            rules: [{
+              type: 'firstName', message: 'Please enter your first name',
+            }, {
+              required: true, message: 'First name is required',
+            }],
+          })(
+            <Input />
+          )}
+        </FormItem>
+
+
+              <FormItem
+          {...formItemLayout}
+          label="lastName"
+        >
+          {getFieldDecorator('name', {
+            rules: [{
+              type: 'lastName', message: 'Please enter your last name',
+            }, {
+              required: true, message: 'Last name is required',
+            }],
+          })(
+            <Input />
+          )}
+        </FormItem>
+ 
+
         <FormItem
           {...formItemLayout}
           label="E-mail"
@@ -102,6 +134,8 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
+
+        
         <FormItem
           {...formItemLayout}
           label="Password"
@@ -131,25 +165,9 @@ class RegistrationForm extends React.Component {
           )}
         </FormItem>
 
-        
-
-        <FormItem
-          {...formItemLayout}
-          label="Website"
-        >
-          {getFieldDecorator('website', {
-            rules: [{ required: true, message: 'Please input website!' }],
-          })(
-            <AutoComplete
-              dataSource={websiteOptions}
-              onChange={this.handleWebsiteChange}
-              placeholder="website"
-            >
-              <Input />
-            </AutoComplete>
-          )}
-        </FormItem>
-   
+        <FormItem {...tailFormItemLayout}>
+          <Button type="primary" htmlType="submit">Login</Button>
+          </FormItem>
         <FormItem {...tailFormItemLayout}>
           <Button type="primary" htmlType="submit">Register</Button>
         </FormItem>
