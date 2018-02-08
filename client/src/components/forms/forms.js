@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
+import API from "../../utils/API";
 const FormItem = Form.Item;
 const Option = Select.Option;
 const AutoCompleteOption = AutoComplete.Option;
@@ -12,9 +13,14 @@ class RegistrationForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
+      const { confirm, ...newChef } = values;
       if (!err) {
-        console.log('Received values of form: ', values);
+        console.log('Received values of form: ', newChef);
+        API.saveChef(newChef)
+          .then()
+          .catch();
       }
+
     });
   }
   handleConfirmBlur = (e) => {
@@ -73,14 +79,6 @@ class RegistrationForm extends React.Component {
         },
       },
     };
-    const prefixSelector = getFieldDecorator('prefix', {
-      initialValue: '86',
-    })(
-      <Select style={{ width: 70 }}>
-        <Option value="86"></Option>
-        <Option value="87"></Option>
-      </Select>
-    );
 
     const websiteOptions = autoCompleteResult.map(website => (
       <AutoCompleteOption key={website}>{website}</AutoCompleteOption>
@@ -92,9 +90,9 @@ class RegistrationForm extends React.Component {
           {...formItemLayout}
           label="First Name"
         >
-          {getFieldDecorator('name', {
+          {getFieldDecorator('firstname', {
             rules: [{
-              type: 'firstName', message: 'Please enter your first name',
+              type: 'string', message: 'Please enter your first name',
             }, {
               required: true, message: 'First name is required',
             }],
@@ -110,7 +108,7 @@ class RegistrationForm extends React.Component {
         >
           {getFieldDecorator('lastname', {
             rules: [{
-              type: 'lastName', message: 'Please enter your last name',
+              type: 'string', message: 'Please enter your last name',
             }, {
               required: true, message: 'Last name is required',
             }],
@@ -125,7 +123,7 @@ class RegistrationForm extends React.Component {
         >
           {getFieldDecorator('username', {
             rules: [{
-              type: 'username', message: 'Please enter your user name',
+              type: 'string', message: 'Please enter your user name',
             }, {
               required: true, message: 'User name is required',
             }],
