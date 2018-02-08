@@ -90,7 +90,7 @@ class RegistrationForm extends React.Component {
       <Form onSubmit={this.handleSubmit}>
               <FormItem
           {...formItemLayout}
-          label="firstName"
+          label="First Name"
         >
           {getFieldDecorator('name', {
             rules: [{
@@ -104,15 +104,30 @@ class RegistrationForm extends React.Component {
         </FormItem>
 
 
-              <FormItem
+          <FormItem
           {...formItemLayout}
-          label="lastName"
+          label="Last Name"
         >
-          {getFieldDecorator('name', {
+          {getFieldDecorator('lastname', {
             rules: [{
               type: 'lastName', message: 'Please enter your last name',
             }, {
               required: true, message: 'Last name is required',
+            }],
+          })(
+            <Input />
+          )}
+        </FormItem>
+
+        <FormItem
+          {...formItemLayout}
+          label="User Name"
+        >
+          {getFieldDecorator('username', {
+            rules: [{
+              type: 'username', message: 'Please enter your user name',
+            }, {
+              required: true, message: 'User name is required',
             }],
           })(
             <Input />
