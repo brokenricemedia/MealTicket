@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "concurrently \"nodemon server.js\" \"cd ./client  && yarn start \" ",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cd client && npm install && npm run build"
+    "postinstall": "cd client && yarn install && yarn build"
   },
   "dependencies": {
     "concurrently": "^3.5.1",
@@ -28,5 +28,16 @@
   "bugs": {
     "url": "https://github.com/KeliChau/MealTicket/issues"
   },
-  "homepage": "https://github.com/KeliChau/MealTicket#readme"
+  "homepage": "https://github.com/KeliChau/MealTicket#readme",
+  "dependencies": {
+    "antd": "^3.2.0",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3",
+    "mongoose-type-url": "^1.0.2",
+    "nodemon": "^1.14.12",
+    "react-dynamic-forms": "^0.15.0",
+    "react-materialize": "^1.1.2"
+  }
 }
