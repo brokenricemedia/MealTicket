@@ -1,4 +1,4 @@
-/*.dynamic-delete-button {
+.dynamic-delete-button {
   cursor: pointer;
   position: relative;
   top: 4px;
@@ -12,4 +12,4 @@
 .dynamic-delete-button[disabled] {
   cursor: not-allowed;
   opacity: 0.5;
-}*/
+}
