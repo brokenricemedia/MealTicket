@@ -86,6 +86,7 @@ class RegistrationForm extends React.Component {
 
     return (
       <Form onSubmit={this.handleSubmit}>
+      
               <FormItem
           {...formItemLayout}
           label="First Name"
@@ -100,8 +101,6 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
-
-
           <FormItem
           {...formItemLayout}
           label="Last Name"
@@ -116,7 +115,6 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
-
         <FormItem
           {...formItemLayout}
           label="User Name"
@@ -131,8 +129,6 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
- 
-
         <FormItem
           {...formItemLayout}
           label="E-mail"
@@ -146,9 +142,7 @@ class RegistrationForm extends React.Component {
           })(
             <Input />
           )}
-        </FormItem>
-
-        
+        </FormItem>        
         <FormItem
           {...formItemLayout}
           label="Password"
@@ -177,10 +171,6 @@ class RegistrationForm extends React.Component {
             <Input type="password" onBlur={this.handleConfirmBlur} />
           )}
         </FormItem>
-
-        <FormItem {...tailFormItemLayout}>
-          <Button type="primary" htmlType="submit">Login</Button>
-          </FormItem>
         <FormItem {...tailFormItemLayout}>
           <Button type="primary" htmlType="submit">Register</Button>
         </FormItem>
