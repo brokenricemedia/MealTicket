@@ -7,7 +7,7 @@ import WrappedDemo from "./components/food"
 import './components/forms/forms.css';
 import Forms from "./components/forms";
 import './utils/API.js'
-import WrappedNormalLoginForm from './components/customersignin';
+import Form from './components/customersignin';
 import './components/customersignin/customersignin.css';
 
 class App extends Component {
