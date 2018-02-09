@@ -5,6 +5,7 @@ import './App.css';
 import 'antd/dist/antd.css';
 import './components/forms/forms.css';
 import Forms from "./components/forms";
+import './utils/API.js'
 
 class App extends Component {
   render() {
