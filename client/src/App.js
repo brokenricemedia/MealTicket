@@ -6,6 +6,7 @@ import 'antd/dist/antd.css';
 import './components/forms/forms.css';
 import Forms from "./components/forms";
 import './utils/API.js'
+import WrappedDynamicFieldSet from './components/signup';
 
 class App extends Component {
   render() {

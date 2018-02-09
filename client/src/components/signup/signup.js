@@ -115,3 +115,5 @@ class DynamicFieldSet extends React.Component {
 
 const WrappedDynamicFieldSet = Form.create()(DynamicFieldSet);
 ReactDOM.render(<WrappedDynamicFieldSet />, mountNode);
+
+export default WrappedDynamicFieldSet;
