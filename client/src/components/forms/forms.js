@@ -1,6 +1,12 @@
 import React from 'react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
+import './forms.css';
 import API from "../../utils/API";
+// import './components/home/home.css';import API from "../../utils/API";
+// import './components/about/about.css';import API from "../../utils/API";
+// import './components/contact/contact.css';import API from "../../utils/API"
+
+
 const FormItem = Form.Item;
 const Option = Select.Option;
 const AutoCompleteOption = AutoComplete.Option;
@@ -85,7 +91,7 @@ class RegistrationForm extends React.Component {
     ));
 
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form className="glitter" onSubmit={this.handleSubmit}>
       
               <FormItem
           {...formItemLayout}
