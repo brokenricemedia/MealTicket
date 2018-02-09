@@ -26,6 +26,11 @@
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
     "mongoose": "^5.0.3",
+<<<<<<< HEAD
+    "react-dynamic-forms": "^0.15.0",
+    "react-materialize": "^1.1.2"
+=======
     "mongoose-type-url": "^1.0.2"
+>>>>>>> 1cfeee7b3ab112a171f2a124be1e11b7267ccfc4
   }
 }
