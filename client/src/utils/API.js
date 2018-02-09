@@ -6,7 +6,7 @@ export default {
     return axios.get("/api/chef");
   },
   // Gets the user with the given id
-  gethef: function(id) {
+  getChef: function(id) {
     return axios.get("/api/chef/" + id);
   },
   // Deletes the user with the given id

@@ -21,13 +21,10 @@
   },
   "homepage": "https://github.com/KeliChau/MealTicket#readme",
   "dependencies": {
-    "antd": "^3.2.0",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
     "mongoose": "^5.0.3",
-    "react-dynamic-forms": "^0.15.0",
-    "react-materialize": "^1.1.2"
     "mongoose-type-url": "^1.0.2"
   }
 }
