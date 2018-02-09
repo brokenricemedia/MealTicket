@@ -1,36 +1,32 @@
 {
-  "name": "MealTicket",
+  "name": "mealticket",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "## Overview",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "concurrently \"nodemon server.js\" \"cd ./client  && yarn start \" ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd client && npm install && npm run build"
   },
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.4",
+    "mongoose-type-url": "^1.0.2",
+    "nodemon": "^1.14.12",
+    "react-dynamic-forms": "^0.15.0",
+    "react-materialize": "^1.1.2"
+  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KeliChau/MealTicket.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KeliChau/MealTicket/issues"
   },
-  "homepage": "https://github.com/KeliChau/MealTicket#readme",
-  "dependencies": {
-    "antd": "^3.2.0",
-    "body-parser": "^1.18.2",
-    "concurrently": "^3.5.1",
-    "express": "^4.16.2",
-    "mongoose": "^5.0.3",
-<<<<<<< HEAD
-    "react-dynamic-forms": "^0.15.0",
-    "react-materialize": "^1.1.2"
-=======
-    "mongoose-type-url": "^1.0.2"
->>>>>>> 1cfeee7b3ab112a171f2a124be1e11b7267ccfc4
-  }
+  "homepage": "https://github.com/KeliChau/MealTicket#readme"
 }
