@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "antd": "^3.2.0",
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
+    "material-ui": "^0.20.0",
     "mongoose": "^5.0.3",
     "mongoose-type-url": "^1.0.2",
     "nodemon": "^1.14.12",
@@ -21,7 +23,8 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-dynamic-forms": "^0.15.0",
-    "react-materialize": "^1.1.2"
+    "react-materialize": "^1.1.2",
+    "react-tap-event-plugin": "^3.0.2"
   },
   "devDependencies": {},
   "repository": {
