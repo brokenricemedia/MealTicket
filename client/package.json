@@ -5,20 +5,16 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "antd": "^3.2.0",
-<<<<<<< HEAD
+    "axios": "^0.17.1",
+    "bootstrap": "^4.0.0",
     "install": "^0.10.4",
     "npm": "^5.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-materialize": "^1.1.2",
-=======
-    "axios": "^0.17.1",
-    "bootstrap": "^4.0.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
->>>>>>> 1cfeee7b3ab112a171f2a124be1e11b7267ccfc4
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "react-shopping-cart-starter-kit": "^0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
