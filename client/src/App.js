@@ -13,7 +13,8 @@ import Forms from "./components/forms";
 // import About from "./components/about";
 // import Contact from "./components/contact";
 // import Home from "./components/home";
-import './utils/API.js'
+// import './utils/API.js'
+// import './utils/loginAPI.js'
 import WrappedLogin from './components/customersignin';
 import './components/customersignin/customersignin.css';
 
@@ -23,22 +24,15 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
         <header className="App-header">   
           <h1 className="App-title">Welcome to Meal Ticket!</h1>
 
         </header>
 
-       <Forms /> 
+      <Forms /> 
 
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      
-        <WrappedDemo />
-        <Forms />
-
-        <WrappedLogin />
+      <WrappedLogin />
 
       </div>
      </Router> 
