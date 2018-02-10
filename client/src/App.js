@@ -14,7 +14,9 @@ import Forms from "./components/forms";
 // import Contact from "./components/contact";
 // import Home from "./components/home";
 import './utils/API.js'
-import Navbar from "./components/navbar"
+import WrappedLogin from './components/customersignin';
+import './components/customersignin/customersignin.css';
+
 
 class App extends Component {
   render() {
@@ -35,6 +37,8 @@ class App extends Component {
       
         <WrappedDemo />
         <Forms />
+
+        <WrappedLogin />
 
       </div>
      </Router> 
