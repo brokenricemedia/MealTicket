@@ -1,6 +1,12 @@
 import React from 'react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
+import './forms.css';
 import API from "../../utils/API";
+// import './components/home/home.css';import API from "../../utils/API";
+// import './components/about/about.css';import API from "../../utils/API";
+// import './components/contact/contact.css';import API from "../../utils/API"
+
+
 const FormItem = Form.Item;
 const Option = Select.Option;
 const AutoCompleteOption = AutoComplete.Option;
@@ -85,7 +91,8 @@ class RegistrationForm extends React.Component {
     ));
 
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form className="glitter" onSubmit={this.handleSubmit}>
+      
               <FormItem
           {...formItemLayout}
           label="First Name"
@@ -100,8 +107,6 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
-
-
           <FormItem
           {...formItemLayout}
           label="Last Name"
@@ -116,7 +121,6 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
-
         <FormItem
           {...formItemLayout}
           label="User Name"
@@ -131,8 +135,6 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
- 
-
         <FormItem
           {...formItemLayout}
           label="E-mail"
@@ -146,9 +148,7 @@ class RegistrationForm extends React.Component {
           })(
             <Input />
           )}
-        </FormItem>
-
-        
+        </FormItem>        
         <FormItem
           {...formItemLayout}
           label="Password"
@@ -177,10 +177,6 @@ class RegistrationForm extends React.Component {
             <Input type="password" onBlur={this.handleConfirmBlur} />
           )}
         </FormItem>
-
-        <FormItem {...tailFormItemLayout}>
-          <Button type="primary" htmlType="submit">Login</Button>
-          </FormItem>
         <FormItem {...tailFormItemLayout}>
           <Button type="primary" htmlType="submit">Register</Button>
         </FormItem>
