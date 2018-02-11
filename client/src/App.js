@@ -15,6 +15,11 @@ import Forms from "./components/forms";
 // import Home from "./components/home";
 import './utils/API.js'
 
+const home =() => <div>Home</div>
+const forms = () => <div>Login</div>
+const navbar = () => <div>Welcome</div>
+
+
 class App extends Component {
   render() {
     return (
@@ -28,9 +33,7 @@ class App extends Component {
 
        <Forms /> 
 
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+       
         <WrappedDemo />
         <Forms />
 

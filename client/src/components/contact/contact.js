@@ -1,3 +1,3 @@
 import "./contact.css";
 
-<h1>Contact Me</h1>
+<h1>Contact</h1>

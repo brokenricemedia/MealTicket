@@ -1,3 +1,3 @@
-import "./contact.css";
+import "./about.css";
 
-<h1>Contact Me</h1>
+<h1>About</h1>
