@@ -18,7 +18,7 @@ class cart extends Component {
             <h1>Food Product Page</h1>
                 <div key="key1" >
                     <img src="https://farm5.staticflickr.com/4703/26320286878_48aecce23b.jpg" alt="Cheesecake" ></img>
-                    <figcaption>Cheesecake</figcaption>
+                    <figcaption>Cheesecake $40.00</figcaption>
                 </div>
             <div key="key2" >
                     <img src="https://farm5.staticflickr.com/4697/28413205699_44d515f2e2.jpg" alt="Tonkatsu Ramen"></img>
