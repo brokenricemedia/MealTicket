@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+// const bcrypt = require("bcrypt");
 const chefSchema = new Schema({
 
     firstname:{
@@ -24,6 +25,14 @@ const chefSchema = new Schema({
       required: true
       }    
 });
+
+// chefSchema.methods.generateHash = function(password){
+//   return bcrypt.hashSync(password, bcrypt.genSaltSync(9));
+// }
+
+// chefSchema.methods.validPassword = function(password){
+//   return bcrypt.compareSync(password, this.local.password);
+// }
 
 // This creates our model from the above schema, using mongoose's model method
 const Chef = mongoose.model("Chef", chefSchema);

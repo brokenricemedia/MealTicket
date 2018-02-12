@@ -9,9 +9,14 @@ router.post("/", (req, res) => {
 		// email: {$eq:req.body.email},
 		// password:{$eq:req.body.password}
 		email: req.body.email,
-		password: req.body.password
+
 	})
-	.then(dbModel => res.json(dbModel))
+	.then((dbChef) => {
+		//check if req.body.password is === dbChef.password
+
+		
+	})
+
       .catch(err => res.status(422).json(err));
 })
 

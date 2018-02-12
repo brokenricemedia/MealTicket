@@ -29,6 +29,11 @@ const foodSchema = new Schema({
       type: mongoose.SchemaTypes.Url
 
     },
+    date:{
+      type: Date,
+      default: Date.now
+
+    }
 
   });
 
