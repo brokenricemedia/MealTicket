@@ -3,15 +3,12 @@
 ## Table of Contents  
 + [Overview](#overview)  
 + [Visuals](#visuals)
-+ [Installation](#installation)  
-+ [Teams](#teams)
 + [Assignment](#assignment)
-+ [Requirements](#requirements)
-+ [User Story](user-story)
-+ [Visuals](#visuals)
-+ [Acknowledgments](#acknowledgments)
-+ [Future Plans](#future-plans)
++ [Future Development](#future-development)
 + [Contributing](#contributing)
++ [Installation](#installation)
++ [Usage](#usage)
++ [Acknowledgments](#acknowledgments)
 + [License](#license)
 
 ## Overview
@@ -20,13 +17,13 @@ MealTicket is an e-Commerce web app that sells homemade dishes and baked goods. 
 
 ## Visuals
 
-## Teams
+## Assignment
+This application is a final group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. 
+
+### Collaborators
 + **Backend**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
 + **Frontend**: [Juanita Pinkney](https://www.github.com/juanitanpinkney) and [Brian Peace](https://www.github.com/bpeace71)
-+ **Project Manager and Frontend/Backend (Floater)**: [Keli Chau](https://www.github.com/kelichau)
-
-## Assignment
-This application is a final group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Jay Huang](https://www.github.com/aznprox), [Brad Whitcomb](https://www.github.com/whitco670), [Juanita Pinkney](https://www.github.com/juanitanpinkney), [Brian Peace](https://www.github.com/bpeace71), and [Keli Chau](https://www.github.com/kelichau).
++ **Frontend and Project Management**: [Keli Chau](https://www.github.com/kelichau)
 
 ### Requirements
 + Must use React.js for entire app
@@ -63,7 +60,7 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 4. Product results page will show based on user search by location, product name, or vendor name
 
-## Future Plans
+## Future Development
 + Paypal or Stripe Payment Integration
 + Expand web app to a platform where local home chefs can create account as vendors to sell their products
 
