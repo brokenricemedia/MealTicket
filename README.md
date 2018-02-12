@@ -2,37 +2,28 @@
 
 ## Table of Contents  
 + [Overview](#overview)  
-+ [Installation](#installation)  
-+ [Teams](#teams)
-+ [Assignment](#assignment)
-+ [Requirements](#requirements)
-+ [User Story](user-story)
 + [Visuals](#visuals)
-+ [Acknowledgments](#acknowledgments)
-+ [Future Plans](#future-plans)
++ [Assignment](#assignment)
++ [Future Development](#future-development)
 + [Contributing](#contributing)
++ [Installation](#installation)
++ [Usage](#usage)
++ [Acknowledgments](#acknowledgments)
 + [License](#license)
 
 ## Overview
 
-MealTicket is an e-Commerce web app that sells homemade dishes and baked goods. Consumers can create an account to browse products and purchase. 
+MealTicket is a MERN stack e-Commerce web app that sells homemade dishes and baked goods. Consumers can create an account to browse products and purchase. 
 
 ## Visuals
 
-## Installation 
-+ `npm install`
-+ `npm install antd`
-+ `npm install react-stack-grid`
+## Assignment
+This application is a final group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. 
 
-## Usage
-
-### Assignment
-This application is a final group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Jay Huang](https://www.github.com/aznprox), [Brad Whitcomb](https://www.github.com/whitco670), [Juanita Pinkney](https://www.github.com/juanitanpinkney), [Brian Peace](https://www.github.com/bpeace71), and [Keli Chau](https://www.github.com/kelichau).
-
-#### Teams
+### Collaborators
 + **Backend**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
 + **Frontend**: [Juanita Pinkney](https://www.github.com/juanitanpinkney) and [Brian Peace](https://www.github.com/bpeace71)
-+ **Project Manager and Frontend/Backend (Floater)**: [Keli Chau](https://www.github.com/kelichau)
++ **Frontend and Project Management**: [Keli Chau](https://www.github.com/kelichau)
 
 ### Requirements
 + Must use React.js for entire app
@@ -51,32 +42,27 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 1. Users can create an account and login as a vendor or consumer or browse products  without an account or limitations
 
 2. Vendor View
-+ Vendors must have a valid food license and it will be verified before they are allowed to have an account
-+ **Profile Page**: Name, Profile Photo, Business Name, Location, Deliver/Pickup Details
-+ **Add**: Product Name, Price, Description (50 Characters), Photo, Respond to Reviews (Cannot remove reviews)
-+ **Update**: Product Name, Price, Description, Photo
-+ **Remove**: Product Availability
+    + Vendors must have a valid food license and it will be verified before they are allowed to have an account
+    + **Profile Page**: Name, Profile Photo, Business Name, Location, Deliver/Pickup Details
+    + **Add**: Product Name, Price, Description (50 Characters), Photo, Respond to Reviews (Cannot remove reviews)
+    + **Update**: Product Name, Price, Description, Photo
+    + **Remove**: Product Availability
 
 3. Consumer View
-+ **Browse Vendors**: Location, Culture, Dish/Baked Good Search
-+ **Profile**: Name, Profile Photo, Interests, Payment Information, History of Reviews and Comments
-+ Place Advanced Order
-+ Cancel Order
-+ Purchase Product
-+ Review Product
-+ Remove Product Review
-+ Update Product Review
+    + **Browse Vendors**: Location, Culture, Dish/Baked Good Search
+    + **Profile**: Name, Profile Photo, Interests, Payment Information, History of Reviews and Comments
+    + Place Advanced Order
+    + Cancel Order
+    + Purchase Product
+    + Review Product
+    + Remove Product Review
+    + Update Product Review
 
 4. Product results page will show based on user search by location, product name, or vendor name
 
-## Acknowledgments
-+ [Ant Design](https://ant.design/) framework 
-+ [Tsuyoshi Wada](https://www.github.com/tsuyoshiwada), full stack web developer, for React Stack Grid on products page
-+ [GitHub](http://www.github.com)
-+ [Heroku](http://www.heroku.com)
-
-## Future Plans
+## Future Development
 + Paypal or Stripe Payment Integration
++ Expand web app to a platform where local home chefs can create account as vendors to sell their products
 
 ## Contributing
 1. Fork this repository
@@ -84,5 +70,18 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
+
+## Installation 
++ `npm install`
++ `npm install antd`
++ `npm install react-stack-grid`
+
+## Usage
+
+## Acknowledgments
++ [Ant Design](https://ant.design/) framework 
++ [Tsuyoshi Wada](https://www.github.com/tsuyoshiwada), full stack web developer, for React Stack Grid on products page
++ [GitHub](http://www.github.com)
++ [Heroku](http://www.heroku.com)
 
 ## License
