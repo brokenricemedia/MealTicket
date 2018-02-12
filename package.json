@@ -15,6 +15,7 @@
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
+    "mailer": "^0.6.7",
     "material-ui": "^0.20.0",
     "mongoose": "^5.0.3",
     "mongoose-type-url": "^1.0.2",

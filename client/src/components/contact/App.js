@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import logo from './logo.svg'
 import './App.css'
-import ContactForm from './ContactForm'
+import ContactForm from './contact'
 
 class App extends Component {
   render() {
