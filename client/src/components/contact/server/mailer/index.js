@@ -14,8 +14,8 @@ const send = ({ email, name, text }) => {
   const from = name && email ? `${name} <${email}>` : `${name || email}`
   const message = {
     from,
-    to: 'react.nodemailer@gmail.com',
-    subject: `New message from ${from} at creating-contact-forms-with-nodemailer-and-react`,
+    to: 'bpeacedev@gmail.com',
+    subject: `New message from ${from} at Meal Ticket`,
     text,
     replyTo: from
   };
