@@ -13,8 +13,11 @@ import Forms from "./components/forms";
 // import About from "./components/about";
 // import Contact from "./components/contact";
 // import Home from "./components/home";
-import './utils/API.js'
-import Navbar from "./components/navbar"
+// import './utils/API.js'
+// import './utils/loginAPI.js'
+import WrappedLogin from './components/customersignin';
+import './components/customersignin/customersignin.css';
+
 
 const home =() => <div>Home</div>
 const forms = () => <div>Login</div>
@@ -26,14 +29,15 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
         <header className="App-header">   
           <h1 className="App-title">Welcome to Meal Ticket!</h1>
 
         </header>
 
-       <Forms /> 
+      <Forms /> 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
        
 =======
@@ -44,6 +48,9 @@ class App extends Component {
 >>>>>>> 566f3c5e95d563d8924fe7056c13f39c6b7dba00
         <WrappedDemo />
         <Forms />
+=======
+      <WrappedLogin />
+>>>>>>> 649586efb19fd5e56e9c1fe8dcce35bd5f0ac67e
 
       </div>
      </Router> 
