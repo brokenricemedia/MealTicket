@@ -2,7 +2,7 @@
 
 ## Table of Contents  
 + [Overview](#overview)  
-+ [How to Use](#how-to-use)  
++ [Installation](#installation)  
 + [Teams](#teams)
 + [Assignment](#assignment)
 + [Requirements](#requirements)
@@ -10,25 +10,31 @@
 + [Visuals](#visuals)
 + [Acknowledgments](#acknowledgments)
 + [Future Plans](#future-plans)
++ [Contributing](#contributing)
++ [License](#license)
 
 ## Overview
 
-MealTicket is an e-Commerce web app that allow local Atlanta home chefs to participate as vendors by selling their specialty dishes or baked goods and consumers can look up certain dishes/baked goods or vendors to purchase and place orders in advance. 
+MealTicket is an e-Commerce web app that sells homemade dishes and baked goods. Consumers can create an account to browse products and purchase. 
 
-#### How to Use 
+## Visuals
+
+## Installation 
 + `npm install`
 + `npm install antd`
 + `npm install react-stack-grid`
 
-#### Teams
+## Usage
+
+### Teams
 + **Backend**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
 + **Frontend**: [Juanita Pinkney](https://www.github.com/juanitanpinkney) and [Brian Peace](https://www.github.com/bpeace71)
 + **Project Manager and Frontend/Backend (Floater)**: [Keli Chau](https://www.github.com/kelichau)
 
-#### Assignment
+### Assignment
 This application is a final group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Jay Huang](https://www.github.com/aznprox), [Brad Whitcomb](https://www.github.com/whitco670), [Juanita Pinkney](https://www.github.com/juanitanpinkney), [Brian Peace](https://www.github.com/bpeace71), and [Keli Chau](https://www.github.com/kelichau).
 
-##### Requirements
+### Requirements
 + Must use React.js for entire app
 + Must use a Node and Express Web Server
 + Must be backed by a MySQL or MongoDB Database with a Sequelize or Mongoose ORM  
@@ -41,7 +47,7 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 + Must meet good quality coding standards (indentation, scoping, naming)
 + Must not expose sensitive API key information on the server
 
-##### User Story
+### User Story
 1. Users can create an account and login as a vendor or consumer or browse products  without an account or limitations
 
 2. Vendor View
@@ -63,15 +69,20 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 4. Product results page will show based on user search by location, product name, or vendor name
 
-### Visuals
-<img src="visuals/Landing2.jpg" width="300" height="450"/>
-<img src="visuals/Landing1.jpg" width="600" height="400"/>
-<img src="visuals/CategoryNavBar.jpg" width="600" height="400"/>
-<img src="visuals/Featured.jpg" width="600" height="400"/>
-<img src="visuals/Header.jpg" width="600" height="400"/>
-<img src="visuals/RecentViews.jpg" width="600" height="400"/>
-<img src="visuals/Search.jpg" width="600" height="400"/>
-
 ## Acknowledgments
++ [Ant Design](https://ant.design/) framework 
++ [Tsuyoshi Wada](https://www.github.com/tsuyoshiwada), full stack web developer, for React Stack Grid on products page
++ [GitHub](http://www.github.com)
++ [Heroku](http://www.heroku.com)
 
 ## Future Plans
++ Paypal or Stripe Payment Integration
+
+## Contributing
+1. Fork this repository
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
+
+## License
