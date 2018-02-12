@@ -78,6 +78,7 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 ## Future Plans
 + Paypal or Stripe Payment Integration
++ Expand web app to a platform where local home chefs can create account as vendors
 
 ## Contributing
 1. Fork this repository
