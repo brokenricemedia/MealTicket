@@ -8,10 +8,10 @@ import WrappedDemo from "./components/food"
 import './components/forms/forms.css';
 import './components/about/about.css';
 import './components/home/home.css';
-import './components/contact/contact.css';
+import './components/contact/index.css';
 import Forms from "./components/forms";
 // import About from "./components/about";
-// import Contact from "./components/contact";
+import ContactForm from "./components/contact";
 // import Home from "./components/home";
 // import './utils/API.js'
 // import './utils/loginAPI.js'
@@ -33,6 +33,8 @@ class App extends Component {
       <Forms /> 
 
       <WrappedLogin />
+      <ContactForm />
+
 
       </div>
      </Router> 
