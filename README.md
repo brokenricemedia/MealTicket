@@ -13,7 +13,7 @@
 
 ## Overview
 
-MealTicket is an e-Commerce web app that sells homemade dishes and baked goods. Consumers can create an account to browse products and purchase. 
+MealTicket is a MERN stack e-Commerce web app that sells homemade dishes and baked goods. Consumers can create an account to browse products and purchase. 
 
 ## Visuals
 
