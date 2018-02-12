@@ -3,6 +3,25 @@ import StackGrid from "react-stack-grid";
 import Fooditem from "../foodItem";
 
 class cart extends Component {
+    state = {
+        cartItems: []
+    }
+    componentWillMount() {
+        //axios call to the back end
+        //on response, set state with array of products
+    }
+    addToCart = (e) => {
+        e.preventDefault();
+        alert(e.target.id);
+    }
+    const cartItem = {
+        this.state.cartItems.map((item) => {
+            <div key={item.id} >
+                <img src={item.img_url} alt="Char Siu Chicken" ></img>
+                <figcaption>{item.title} ${item.price}</figcaption>
+            </div>
+        })
+     }
     render() {
         const style = {
             itemStyle: {
@@ -11,6 +30,7 @@ class cart extends Component {
                 backgroundColor: "red"
             }
          };
+
         return (
             <StackGrid
                 columnWidth={300}
@@ -19,6 +39,7 @@ class cart extends Component {
                 <div key="key1" >
                     <img src="https://farm5.staticflickr.com/4703/26320286878_48aecce23b.jpg" alt="Cheesecake" ></img>
                     <figcaption>Cheesecake $40.00</figcaption>
+                    <button id="001001" onClick={this.addToCart}>Add to cart</button>
                 </div>
             <div key="key2" >
                     <img src="https://farm5.staticflickr.com/4697/28413205699_44d515f2e2.jpg" alt="Tonkatsu Ramen"></img>
