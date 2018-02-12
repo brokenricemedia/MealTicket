@@ -60,10 +60,13 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 4. Product results page will show based on user search by location, product name, or vendor name
 
+### [:top:](#table-of-contents)
+
 ## Future Development
 + Paypal or Stripe Payment Integration
 + Expand web app to a platform where local home chefs can create account as vendors to sell their products
-+ [:top:](#the-meal-ticket-company)
+
+### [:top:](#table-of-contents)
 
 ## Contributing
 1. Fork this repository
@@ -72,18 +75,26 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
+### [:top:](#table-of-contents)
+
 ## Installation 
 + `npm install`
 + `npm install antd`
 + `npm install react-stack-grid`
 
+### [:top:](#table-of-contents)
+
 ## Usage
+
+### [:top:](#table-of-contents)
 
 ## Acknowledgments
 + [Ant Design](https://ant.design/) framework 
 + [Tsuyoshi Wada](https://www.github.com/tsuyoshiwada), full stack web developer, for React Stack Grid on products page
 + [GitHub](http://www.github.com)
 + [Heroku](http://www.heroku.com)
+
+### [:top:](#table-of-contents)
 
 ## License
 
