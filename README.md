@@ -86,4 +86,4 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 ## License
 
-:top: [Table of Contents](#table-of-contents)
+[:top:](#table-of-contents)
