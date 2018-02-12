@@ -20,13 +20,6 @@ MealTicket is an e-Commerce web app that sells homemade dishes and baked goods. 
 
 ## Visuals
 
-## Installation 
-+ `npm install`
-+ `npm install antd`
-+ `npm install react-stack-grid`
-
-## Usage
-
 ## Teams
 + **Backend**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
 + **Frontend**: [Juanita Pinkney](https://www.github.com/juanitanpinkney) and [Brian Peace](https://www.github.com/bpeace71)
@@ -70,12 +63,6 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 4. Product results page will show based on user search by location, product name, or vendor name
 
-## Acknowledgments
-+ [Ant Design](https://ant.design/) framework 
-+ [Tsuyoshi Wada](https://www.github.com/tsuyoshiwada), full stack web developer, for React Stack Grid on products page
-+ [GitHub](http://www.github.com)
-+ [Heroku](http://www.heroku.com)
-
 ## Future Plans
 + Paypal or Stripe Payment Integration
 + Expand web app to a platform where local home chefs can create account as vendors to sell their products
@@ -86,5 +73,18 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
+
+## Installation 
++ `npm install`
++ `npm install antd`
++ `npm install react-stack-grid`
+
+## Usage
+
+## Acknowledgments
++ [Ant Design](https://ant.design/) framework 
++ [Tsuyoshi Wada](https://www.github.com/tsuyoshiwada), full stack web developer, for React Stack Grid on products page
++ [GitHub](http://www.github.com)
++ [Heroku](http://www.heroku.com)
 
 ## License
