@@ -63,6 +63,7 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 ## Future Development
 + Paypal or Stripe Payment Integration
 + Expand web app to a platform where local home chefs can create account as vendors to sell their products
++ [:top:](#the-meal-ticket-company)
 
 ## Contributing
 1. Fork this repository
@@ -86,4 +87,4 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 ## License
 
-[:top:](#table-of-contents)
+[:top:](#the-meal-ticket-company)
