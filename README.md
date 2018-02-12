@@ -2,6 +2,7 @@
 
 ## Table of Contents  
 + [Overview](#overview)  
++ [Visuals](#visuals)
 + [Installation](#installation)  
 + [Teams](#teams)
 + [Assignment](#assignment)
@@ -26,12 +27,12 @@ MealTicket is an e-Commerce web app that sells homemade dishes and baked goods. 
 
 ## Usage
 
-### Teams
+## Teams
 + **Backend**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
 + **Frontend**: [Juanita Pinkney](https://www.github.com/juanitanpinkney) and [Brian Peace](https://www.github.com/bpeace71)
 + **Project Manager and Frontend/Backend (Floater)**: [Keli Chau](https://www.github.com/kelichau)
 
-### Assignment
+## Assignment
 This application is a final group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Jay Huang](https://www.github.com/aznprox), [Brad Whitcomb](https://www.github.com/whitco670), [Juanita Pinkney](https://www.github.com/juanitanpinkney), [Brian Peace](https://www.github.com/bpeace71), and [Keli Chau](https://www.github.com/kelichau).
 
 ### Requirements
@@ -51,21 +52,21 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 1. Users can create an account and login as a vendor or consumer or browse products  without an account or limitations
 
 2. Vendor View
-+ Vendors must have a valid food license and it will be verified before they are allowed to have an account
-+ **Profile Page**: Name, Profile Photo, Business Name, Location, Deliver/Pickup Details
-+ **Add**: Product Name, Price, Description (50 Characters), Photo, Respond to Reviews (Cannot remove reviews)
-+ **Update**: Product Name, Price, Description, Photo
-+ **Remove**: Product Availability
+    + Vendors must have a valid food license and it will be verified before they are allowed to have an account
+    + **Profile Page**: Name, Profile Photo, Business Name, Location, Deliver/Pickup Details
+    + **Add**: Product Name, Price, Description (50 Characters), Photo, Respond to Reviews (Cannot remove reviews)
+    + **Update**: Product Name, Price, Description, Photo
+    + **Remove**: Product Availability
 
 3. Consumer View
-+ **Browse Vendors**: Location, Culture, Dish/Baked Good Search
-+ **Profile**: Name, Profile Photo, Interests, Payment Information, History of Reviews and Comments
-+ Place Advanced Order
-+ Cancel Order
-+ Purchase Product
-+ Review Product
-+ Remove Product Review
-+ Update Product Review
+    + **Browse Vendors**: Location, Culture, Dish/Baked Good Search
+    + **Profile**: Name, Profile Photo, Interests, Payment Information, History of Reviews and Comments
+    + Place Advanced Order
+    + Cancel Order
+    + Purchase Product
+    + Review Product
+    + Remove Product Review
+    + Update Product Review
 
 4. Product results page will show based on user search by location, product name, or vendor name
 
