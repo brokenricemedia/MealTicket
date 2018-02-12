@@ -22,35 +22,35 @@ class cart extends Component {
                 </div>
             <div key="key2" >
                     <img src="https://farm5.staticflickr.com/4697/28413205699_44d515f2e2.jpg" alt="Tonkatsu Ramen"></img>
-                    <figcaption>Tonkatsu Ramen</figcaption>
+                    <figcaption>Tonkatsu Ramen $12.95</figcaption>
             </div>
                 <div key="key3" >
                     <img src="https://farm5.staticflickr.com/4622/39481710554_57b8aedd98.jpg" alt="Risotto" ></img>
-                    <figcaption>Asian-Style Risotto</figcaption>
+                    <figcaption>Asian-Style Risotto $11.25</figcaption>
                 </div>
                 <div key="key4" >
                     <img src="https://farm5.staticflickr.com/4628/25321789967_65c8e4d48b.jpg" alt="Venezuelan Arepa " ></img>
-                    <figcaption>Venezuelan Arepa</figcaption>
+                    <figcaption>Venezuelan Arepa $8.95</figcaption>
                 </div>
                 <div key="key5" >
                     <img src="https://farm5.staticflickr.com/4699/28413278889_bb2e39e2a2.jpg" alt="Vietnamese Sour Soup" ></img>
-                    <figcaption>Vietnamese Sour Soup</figcaption>
+                    <figcaption>Vietnamese Sour Soup $13.75</figcaption>
                 </div>
                 <div key="key6" >
                     <img src="https://farm5.staticflickr.com/4623/40193439091_95a96d4218.jpg" alt="Chicken Cordon Bleu" ></img>
-                    <figcaption>Chicken Cordon Bleu</figcaption>
+                    <figcaption>Chicken Cordon Bleu $14.25</figcaption>
                 </div>
                 <div key="key7" >
                     <img src="https://farm5.staticflickr.com/4753/39295394205_a98c06296e.jpg" alt="Char Siu Chicken" ></img>
-                    <figcaption>Char Siu Chicken</figcaption>
+                    <figcaption>Char Siu Chicken $6.25</figcaption>
                 </div>
                 <div key="key8" >
                     <img src="https://farm5.staticflickr.com/4624/39295394265_de13754bc9.jpg" alt="Mexican Toast" ></img>
-                    <figcaption>Mexican Toast</figcaption>
+                    <figcaption>Mexican Toast $5.00</figcaption>
                 </div>
                 <div key="key9" >
                     <img src="https://farm5.staticflickr.com/4655/39295394165_fc0712c843.jpg" alt="French Onion Soup" ></img>
-                    <figcaption>French Onion Soup</figcaption>
+                    <figcaption>French Onion Soup $7.25</figcaption>
                 </div>
 
                 <div key="key10" >
