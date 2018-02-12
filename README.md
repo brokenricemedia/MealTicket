@@ -1,8 +1,24 @@
 # The Meal Ticket Company
 
+## Table of Contents  
++ [Overview](#overview)  
++ [How to Use](#how-to-use)  
++ [Teams](#teams)
++ [Assignment](#assignment)
++ [Requirements](#requirements)
++ [User Story](user-story)
++ [Visuals](#visuals)
++ [Acknowledgments](#acknowledgments)
++ [Future Plans](#future-plans)
+
 ## Overview
 
 MealTicket is an e-Commerce web app that allow local Atlanta home chefs to participate as vendors by selling their specialty dishes or baked goods and consumers can look up certain dishes/baked goods or vendors to purchase and place orders in advance. 
+
+#### How to Use 
++ `npm install`
++ `npm install antd`
++ `npm install react-stack-grid`
 
 #### Teams
 + **Backend**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
