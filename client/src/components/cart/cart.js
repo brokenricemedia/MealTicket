@@ -1,109 +1,132 @@
 import React, { Component } from 'react';
 import StackGrid from "react-stack-grid";
+import axios from "axios"; 
 
-class cart extends Component {
+class Cart extends Component {
+
     state = {
-        cartData: []
+        cartData: [
+            {
+                id: '001',
+                image: 'https://farm5.staticflickr.com/4703/26320286878_48aecce23b.jpg',
+                title: 'Cheesecake',
+                price: '$40.00', 
+            },
+            {
+                id: '002',
+                image: 'https://farm5.staticflickr.com/4697/28413205699_44d515f2e2.jpg',
+                title: 'Tonkatsu Ramen',
+                price: '$12.95',
+            },
+            {
+                id: '003',
+                image: 'https://farm5.staticflickr.com/4622/39481710554_57b8aedd98.jpg',
+                title: 'Asian-Style Risotto',
+                price: '$11.25',
+            },
+            {
+                id: '004',
+                image: 'https://farm5.staticflickr.com/4628/25321789967_65c8e4d48b.jpg',
+                title: 'Venezuelan Arepa',
+                price: '$9.95',
+            },
+            {
+                id: '005',
+                image: 'https://farm5.staticflickr.com/4699/28413278889_bb2e39e2a2.jpg',
+                title: 'Vietnamese Sour Soup',
+                price: '$14.95',
+            },
+            {
+                id: '006',
+                image: 'https://farm5.staticflickr.com/4623/40193439091_95a96d4218.jpg',
+                title: 'Chicken Cordon Bleu',
+                price: '$14.95',
+            },    
+            {
+                id: '007',
+                image: 'https://farm5.staticflickr.com/4753/39295394205_a98c06296e.jpg',
+                title: 'Char Siu Chicken',
+                price: '$6.25',
+            },    
+            {
+                id: '008',
+                image: 'https://farm5.staticflickr.com/4624/39295394265_de13754bc9.jpg',
+                title: 'Mexican Toast',
+                price: '$6.25',
+            },
+            {
+                id: '009',
+                image: 'https://farm5.staticflickr.com/4655/39295394165_fc0712c843.jpg',
+                title: 'French Onion Soup',
+                price: '$7.25',
+            },             
+        ],
+        addedProductTitle: "",
+        addedProductPrice: ""
     };
 
-    constructor(props){
-        super(props);
 
-        this.handleProductTitle = this.handleProductTitle.bind(this);
-        this.handleProductPrice = this.handleProductPrice.bind(this);
-
-        this.setState({
-            AddedProductTitle: "",
-            AddedProductPrice: "",
-        });
-
-        handleProductTitle(event){
-            this.setState({ ProductTitle: event.target.value });
-            this.setState({ ProductPrice: event.target.value });
-        };
-    };
+    handleAddedProduct = (event) => {
+        this.setState({ ProductTitle: event.target.value });
+        this.setState({ ProductPrice: event.target.value });
+    }
 
     addToCart = (event) => {
-        e.preventDefault();
-        alert(e.target.id);
+        event.preventDefault();
+        alert(event.target.value);
         this.setState({
-            AddedProductTitle: event.target.value,
+            AddedProductId: event.target.id,
             AddedProductPrice: event.target.value,
         });
     };
 
-    axios.post('<https://atl-meal-ticket.herokuapp.com/>', {
-        AddedProductTitle: this.state.AddedProductTitle,
-        AddedProductPrice: this.state.AddedProductPrice,
-        })
-        .then(response => {
-            console.log(response, "Product Added to Cart!");
-        })
-        .catch(err => {
-            console.log(err, "Cannot Add Product to Cart, Try Again");
-        });
-
-        this.setState({
-            AddedProductTitle: "",
-            AddedProductPrice: "",
-        });
-    });
-};
-
-    // const cartData = {
-    //     this.state.cartData.map((item) => {
-    //         <div key={item.id} >
-    //             <img src={item.img_url} alt="Char Siu Chicken" ></img>
-    //             <figcaption>{item.title} ${item.price}</figcaption>
-    //         </div>
-    //     })
-    //  };
-
-    <button
-        className="submitproducttocart"
-        type="submit"
-        onClick={this.addToCart}
-    >
-        Submit to Cart<i className="addtoCartButton" aria-hidden="true" />
-    </button>       
-
-class addedProducts extends Component {
-    constructor(props){
-        super(props);
-
-        this.state = {
-            productsAdded: "",
+    addToCartDatabase = () => {
+        axios.post('https://atl-meal-ticket.herokuapp.com', {
+            AddedProductTitle: this.state.AddedProductTitle,
+            AddedProductPrice: this.state.AddedProductPrice,
+            })
+            .then(response => {
+                console.log(response, "Product Added to Cart!");
+                this.setState({
+                    AddedProductTitle: "",
+                    AddedProductPrice: "",
+                });
+            })
+            .catch(err => {
+                console.log(err, "Cannot Add Product to Cart, Try Again");
+            })
         };
+        render() {
+            const CartFood = this.state.cartData
+            const CartDisplay = this.state.cartData.map((cartItem) => {
 
-        componentDidMount(){
-            fetch('<https://atl-meal-ticket.herokuapp.com/>')
-            .then(results => {
-                return results.json();
-            });
-        
-            data.map((productAddedToCart) => {
-                return(
-                    <div key={item.id}>
-                        <img src={item.image}></img>
-                        <h3 className="title">{item.title}</h3>
-                        <h2 className="price">${item.price}</h2>
+                return (
+                    <div>
+                        <h1>{cartItem.id}</h1>
+                        <button
+                            className="submitproducttocart"
+                            type="submit"
+                            id={cartItem.id}
+                            value={cartItem.price}
+                            onClick={this.addToCart}
+                        >
+                            Submit to Cart<i className="addtoCartButton" aria-hidden="true" />
+                        </button> 
+                        <img src={cartItem.image} />
                     </div>
                 )
-            });
+                })
+            return(
+                <div>
+                    <h1>This is my Cart Component</h1>
+                    <StackGrid columnWidth={150}>
+                    {CartDisplay}
+                    </StackGrid>
+                    
+                    
+                </div>
+            )
+        }
+    }
 
-            this.setState({ productsAdded: productsAdded });
-
-            render(){
-              return(
-                  <div className="productsAddedContainer">
-                    <h6>Cart</h6>
-                    {this.state.productsAdded}
-                  </div>
-              )  
-            };
-        };
-    };
-};
-
-export default cart;
-
+export default Cart;
