@@ -21,7 +21,6 @@ import ContactForm from "./components/contact";
 import WrappedLogin from './components/customersignin';
 import './components/customersignin/customersignin.css';
 
-
 class App extends Component {
   render() {
     return (
