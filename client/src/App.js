@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
 import "antd/dist/antd.css";
-import NavBar from "./components/navbar";
-import Home from "./components/home";
-import Forms from "./components/forms";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import Forms from "./components/Forms";
 // import WrappedLogin from "./components/customersignin";
 // import About from "./components/about";
 // import Contact from "./components/contact";
 // import WrappedDemo from "./components/food"
-import "./components/navbar/navbar.css";
-import "./components/home/home.css";
-import "./components/forms/forms.css";
+import "./components/NavBar/navbar.css";
+import "./components/Home/home.css";
+import "./components/Forms/forms.css";
 // import "./components/customersignin/customersignin.css";
 // import "./components/about/about.css";
 // import "./components/contact/contact.css";
@@ -28,13 +28,13 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          {<NavBar />}
-          
+          <NavBar />
+          <Home />
           <header className="App-header">
-            <h1 className="App-title">Welcome to Meal Ticket!</h1>
+            <h1 className="App-title"></h1>
           </header>
         
-          {<Forms />}
+          <Forms />
       
         </div>
       </Router>
