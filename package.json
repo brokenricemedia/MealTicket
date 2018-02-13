@@ -37,16 +37,5 @@
   "bugs": {
     "url": "https://github.com/KeliChau/MealTicket/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/KeliChau/MealTicket#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "concurrently": "^3.5.1",
-    "express": "^4.16.2",
-    "mongoose": "^5.0.3",
-    "mongoose-type-url": "^1.0.2"
-  }
-=======
   "homepage": "https://github.com/KeliChau/MealTicket#readme"
->>>>>>> master
 }
