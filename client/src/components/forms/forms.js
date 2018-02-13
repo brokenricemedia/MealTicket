@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
 import './forms.css';
-import API from "../../utils/API";
+import API from "../../utils/userAPI";
 // import './components/home/home.css';import API from "../../utils/API";
 // import './components/about/about.css';import API from "../../utils/API";
 // import './components/contact/contact.css';import API from "../../utils/API"
@@ -19,10 +19,10 @@ class RegistrationForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
-      const { confirm, ...newChef } = values;
+      const { confirm, ...newUser } = values;
       if (!err) {
-        console.log('Received values of form: ', newChef);
-        API.saveChef(newChef)
+        console.log('Received values of form: ', newUser);
+        API.saveUser(newUser)
           .then()
           .catch();
       }

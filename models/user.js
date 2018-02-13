@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 // const bcrypt = require("bcrypt");
-const chefSchema = new Schema({
+const userSchema = new Schema({
 
     firstname:{
     type: String,
@@ -35,10 +35,10 @@ const chefSchema = new Schema({
 // }
 
 // This creates our model from the above schema, using mongoose's model method
-const Chef = mongoose.model("Chef", chefSchema);
+const User = mongoose.model("User", userSchema);
 
 // Export the Article model
-module.exports = Chef;
+module.exports = User;
 
 
 // note: {

@@ -13,10 +13,10 @@ class RegistrationForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
-      const { confirm, ...newChef } = values;
+      const { confirm, ...loginUser } = values;
       if (!err) {
-        console.log('Received values of form: ', newChef);
-        API.saveChef(newChef)
+        console.log('Received values of form: ', loginUser);
+        API.loginUser(loginUser)
           .then()
           .catch();
       }
