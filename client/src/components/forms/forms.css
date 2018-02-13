@@ -1,5 +1,5 @@
 
-components-form-demo-normal-login login-form {
+/*components-form-demo-normal-login login-form {
   max-width: 300px; text-align: center; font-family: sans-serif; color: black;
 }
 components-form-demo-normal-login login-form-forgot {
@@ -7,14 +7,8 @@ components-form-demo-normal-login login-form-forgot {
 }
 components-form-demo-normal-login login-form-button {
   width: 100%; color: red;
-},
-/*html {
-	background: url("/images/signup.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 },*/
+
 .glitter {
 	color:black;
 	background-color: transparent;

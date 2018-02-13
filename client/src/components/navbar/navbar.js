@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu, Icon } from 'antd';
+import "./navbar.css";
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 

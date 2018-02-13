@@ -1,7 +1,8 @@
 import React from 'react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
-import './forms.css';
 import API from "../../utils/API";
+import './forms.css';
+
 // import './components/home/home.css';import API from "../../utils/API";
 // import './components/about/about.css';import API from "../../utils/API";
 // import './components/contact/contact.css';import API from "../../utils/API"
@@ -65,22 +66,22 @@ class RegistrationForm extends React.Component {
 
     const formItemLayout = {
       labelCol: {
-        xs: { span: 24 },
+        xs: { span: 8 },
         sm: { span: 8 },
       },
       wrapperCol: {
-        xs: { span: 24 },
-        sm: { span: 16 },
+        xs: { span: 8 },
+        sm: { span: 8 },
       },
     };
     const tailFormItemLayout = {
       wrapperCol: {
         xs: {
-          span: 24,
+          span: 8,
           offset: 0,
         },
         sm: {
-          span: 16,
+          span: 8,
           offset: 8,
         },
       },
@@ -121,20 +122,7 @@ class RegistrationForm extends React.Component {
             <Input />
           )}
         </FormItem>
-        <FormItem
-          {...formItemLayout}
-          label="User Name"
-        >
-          {getFieldDecorator('username', {
-            rules: [{
-              type: 'string', message: 'Please enter your user name',
-            }, {
-              required: true, message: 'User name is required',
-            }],
-          })(
-            <Input />
-          )}
-        </FormItem>
+  
         <FormItem
           {...formItemLayout}
           label="E-mail"
