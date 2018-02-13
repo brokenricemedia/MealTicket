@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 // const bcrypt = require("bcrypt");
+<<<<<<< HEAD:models/chef.js
+const chefSchema = new Schema({
+=======
 const userSchema = new Schema({
+>>>>>>> master:models/user.js
 
     firstname:{
     type: String,
