@@ -1,20 +1,6 @@
-
-/*components-form-demo-normal-login login-form {
-  max-width: 300px; text-align: center; font-family: sans-serif; color: black;
-}
-components-form-demo-normal-login login-form-forgot {
-  align-self: center;
-}
-components-form-demo-normal-login login-form-button {
-  width: 100%; color: red;
-},*/
-
-.glitter {
-	color:black;
-	background-color: transparent;
+.RegistrationForm {
+	background: url("../../images/bruschetta.jpg");
+	font-weight: 30px;
 	text-align: center;
-},
-form{
-	text-align: center;
-	border-image-repeat: center;	
+	color: black;
 }

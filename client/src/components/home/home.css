@@ -1,5 +1,8 @@
-/*body {
+/*.Home {
 
-	background: url("../build/css/images/brushetta.jpg");
+		background: url("../../images/greekplatter.jpg");
+		background-position: cover; 
 
-}*/
+	}*/
+
+/*<img src={greekplatter} />*/
