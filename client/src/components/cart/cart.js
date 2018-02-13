@@ -81,7 +81,7 @@ class Cart extends Component {
     };
 
     addToCartDatabase = () => {
-        axios.post('https://atl-meal-ticket.herokuapp.com', {
+        axios.post('', {
             AddedProductTitle: this.state.AddedProductTitle,
             AddedProductPrice: this.state.AddedProductPrice,
             })
@@ -102,7 +102,9 @@ class Cart extends Component {
 
                 return (
                     <div>
-                        <h1>{cartItem.id}</h1>
+                        <h1>{cartItem.id}</h1> 
+                        <img src={cartItem.image} />
+                        <br/><br/>
                         <button
                             className="submitproducttocart"
                             type="submit"
@@ -110,20 +112,17 @@ class Cart extends Component {
                             value={cartItem.price}
                             onClick={this.addToCart}
                         >
-                            Submit to Cart<i className="addtoCartButton" aria-hidden="true" />
-                        </button> 
-                        <img src={cartItem.image} />
+                            Add to Cart<i className="addtoCartButton" aria-hidden="true" />
+                        </button>
+                        <br/><br/>
                     </div>
                 )
                 })
             return(
                 <div>
-                    <h1>This is my Cart Component</h1>
-                    <StackGrid columnWidth={150}>
-                    {CartDisplay}
-                    </StackGrid>
-                    
-                    
+                    <h1>The Meal Ticket</h1>
+                    <h2>Product Listing</h2>
+                        {CartDisplay}
                 </div>
             )
         }
