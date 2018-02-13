@@ -13,7 +13,7 @@
 
 ## Overview
 
-MealTicket is a MERN stack e-Commerce web app that sells homemade dishes and baked goods. Consumers can create an account to browse products and purchase. 
+MealTicket is a MERN stack e-Commerce web app that sells homemade dishes and baked goods. Consumers can create an account to browse products and purchase.
 
 ## Visuals
 
@@ -85,3 +85,4 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 + [Heroku](http://www.heroku.com)
 
 ## License
+### [:top:](#the-meal-ticket-company)

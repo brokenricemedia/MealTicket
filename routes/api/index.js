@@ -1,7 +1,11 @@
 const router = require("express").Router();
-const chefRoutes = require("./chef");
+const userRoutes = require("./user");
+const loginRoutes = require("./login");
+const foodRoutes = require("./food");
 
 // Book routes
-router.use("/chef", chefRoutes);
+router.use("/user", userRoutes);
+router.use("/login", loginRoutes);
+router.use("/food", foodRoutes);
 
 module.exports = router;
