@@ -9,7 +9,7 @@ class Cart extends Component {
             {
                 id: '001',
                 image: 'https://farm5.staticflickr.com/4703/26320286878_48aecce23b.jpg',
-                title: 'Cheesecake',
+                title: 'Durian Cheesecake',
                 price: '$40.00', 
             },
             {
@@ -102,9 +102,10 @@ class Cart extends Component {
 
                 return (
                     <div>
-                        <h1>{cartItem.id}</h1> 
+                        <h3>{cartItem.title}</h3>
                         <img src={cartItem.image} />
                         <br/><br/>
+                        <h4>Item {cartItem.id}</h4> 
                         <button
                             className="submitproducttocart"
                             type="submit"
@@ -122,7 +123,10 @@ class Cart extends Component {
                 <div>
                     <h1>The Meal Ticket</h1>
                     <h2>Product Listing</h2>
+                    <br/><br/>
+                    <StackGrid columnWidth={300}>
                         {CartDisplay}
+                    </StackGrid>
                 </div>
             )
         }
