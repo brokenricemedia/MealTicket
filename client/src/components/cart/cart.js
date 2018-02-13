@@ -122,7 +122,7 @@ class Cart extends Component {
             return(
                 <div>
                     <h1>The Meal Ticket</h1>
-                    <h2>Product Listing</h2>
+                    <h2>Food Menu</h2>
                     <br/><br/>
                     <StackGrid columnWidth={300}>
                         {CartDisplay}
