@@ -5,7 +5,7 @@ const db = require("../../models");
 // Matches with "/api/login"
 router.post("/", (req, res) => {
 		console.log(req.body);
-	db.Chef.findOne({
+	db.User.findOne({
 		// email: {$eq:req.body.email},
 		// password:{$eq:req.body.password}
 		email: req.body.email,
