@@ -22,7 +22,7 @@ import './components/customersignin/customersignin.css';
 import Cart from './containers/Cart';
 import ProductList from './containers/ProductList';
 import NavBar from './components/navbar';
-// import ProductPage from './components/ProductPage';
+import ProductPage from './components/ProductPage';
 
 class App extends Component {
   render() {
@@ -31,8 +31,9 @@ class App extends Component {
         <Router>
             <div className="App">
             <NavBar />
-            <Route path="/productpage" component={Cart} />
-            <Route path="/productlist" component={ProductList} />
+            <Route path="/home" component={ProductPage} />
+            {/* <Route path="/productpage" component={Cart} /> */}
+            {/* <Route path="/productlist" component={ProductList} /> */}
             </div>
         </Router> 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Cart from '../../containers/Cart';
-import ProductList from '../components/ProductList';
+import ProductList from '../../containers/ProductList';
 
 class ProductPage extends Component {
     render (){
