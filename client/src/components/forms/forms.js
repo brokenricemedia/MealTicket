@@ -2,12 +2,12 @@ import React from 'react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
 import './forms.css';
 import API from "../../utils/userAPI";
+import {Redirect} from 'react-router-dom';
 // import './components/home/home.css';import API from "../../utils/API";
 // import './components/about/about.css';import API from "../../utils/API";
 // import './components/contact/contact.css';import API from "../../utils/API"
 
-
-const FormItem = Form.Item;
+;const FormItem = Form.Item;
 const Option = Select.Option;
 const AutoCompleteOption = AutoComplete.Option;
 
@@ -15,6 +15,7 @@ class RegistrationForm extends React.Component {
   state = {
     confirmDirty: false,
     autoCompleteResult: [],
+    redirect: false
   };
   handleSubmit = (e) => {
     e.preventDefault();
@@ -23,8 +24,13 @@ class RegistrationForm extends React.Component {
       if (!err) {
         console.log('Received values of form: ', newUser);
         API.saveUser(newUser)
-          .then()
-          .catch();
+          .then(response => {
+            console.log(response)
+            this.setState({redirect: true})
+          })
+          .catch(err => {
+            console.log(err.message);
+          });
       }
 
     });
@@ -89,7 +95,9 @@ class RegistrationForm extends React.Component {
     const websiteOptions = autoCompleteResult.map(website => (
       <AutoCompleteOption key={website}>{website}</AutoCompleteOption>
     ));
-
+    if (this.state.redirect){
+      return <Redirect to="/home" />
+    } else {
     return (
       <div className="Container loginContainer">
         <div className="row">
@@ -187,7 +195,7 @@ class RegistrationForm extends React.Component {
       </div>
         </div>
       </div>
-    );
+    )};
   }
 }
 

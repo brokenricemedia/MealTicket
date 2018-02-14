@@ -19,6 +19,7 @@ class RegistrationForm extends React.Component {
   state = {
     confirmDirty: false,
     autoCompleteResult: [],
+    redirect: false
   };
   handleSubmit = (e) => {
     e.preventDefault();
@@ -26,13 +27,15 @@ class RegistrationForm extends React.Component {
       const { confirm, ...loginUser } = values;
       if (!err) {
         console.log('Received values of form: ', loginUser);
-        API.loginUser(loginUser)
-          .then({
-            // if(res.status===200){
-            //   <Redirect push to="/api/login"/>
-            // }
-          })
-          .catch();
+        this.setState({redirect: true})
+        // API.loginUser(loginUser)
+        //   .then(response => {
+        //     console.log(response)
+        //     this.setState({redirect: true})
+        //   })
+        //   .catch(err => {
+        //     console.log(err.message)
+        //   });
       }
 
     });
@@ -98,6 +101,9 @@ class RegistrationForm extends React.Component {
       <AutoCompleteOption key={website}>{website}</AutoCompleteOption>
     ));
 
+    if (this.state.redirect){
+      return <Redirect to="/home" />
+    } else {
     return (
   
       <div className="Container signInContainer">
@@ -158,7 +164,7 @@ class RegistrationForm extends React.Component {
       </div>
         </div>
       </div>
-    );
+    )};
   }
 }
 
