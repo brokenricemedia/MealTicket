@@ -1,5 +1,5 @@
 module.exports = {
-  Food: require("./Food"),
-  User: require("./User")
-  
+  Food: require("./food"),
+  User: require("./user"),
+  Cart: require("./cart")
 };

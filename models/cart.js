@@ -5,14 +5,11 @@ const url = require("mongoose-type-url");
 const Schema = mongoose.Schema;
 
 
-const foodSchema = new Schema({
+const cartSchema = new Schema({
 
     title: {
       type: String,
       required: true
-    },
-    image:{
-      type:String,
     },
     price:{
       type: Number,
@@ -21,10 +18,10 @@ const foodSchema = new Schema({
   });
 
 
- const Food = mongoose.model("Food", foodSchema);
+ const Cart = mongoose.model("Cart", cartSchema);
 
 
-module.exports = Food;
+module.exports = Cart;
 
 
 
