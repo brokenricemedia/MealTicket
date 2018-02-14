@@ -1,1 +1,4 @@
-export { default } from "./cart.js";
+import Cart from './Cart';
+import './Cart.css';
+
+export default Cart;

@@ -6,15 +6,18 @@
   "dependencies": {
     "antd": "^3.2.0",
     "axios": "^0.17.1",
+    "bootstrap": "^4.0.0",
     "mailer": "^0.6.7",
     "nodemailer": "^4.4.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-materialize": "^1.1.2",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "react-stack-grid": "^0.7.1",
-    "reactstrap": "^4.8.0"
+    "reactstrap": "^4.8.0",
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
