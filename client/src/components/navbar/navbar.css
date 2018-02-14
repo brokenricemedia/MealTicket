@@ -1,0 +1,18 @@
+.navbarnavbar a, {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+.navItem{
+    align-content: right;
+}
+
+.logo{
+    color:white;
+}
