@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
   // Gets all users
-  getUser: function() {
+  getUsers: function() {
     return axios.get("/api/login");
   },
   // Gets the user with the given id

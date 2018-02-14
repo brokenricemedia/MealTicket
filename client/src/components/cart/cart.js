@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StackGrid from "react-stack-grid";
 import axios from "axios"; 
+import API from "../../utils/foodAPI";
 
 class Cart extends Component {
 
@@ -61,10 +62,22 @@ class Cart extends Component {
                 price: '$7.25',
             },             
         ],
-        addedProductTitle: "",
-        addedProductPrice: ""
+        AddedProductId: "",
+        AddedProductTitle: "",
+        AddedProductPrice: ""
     };
 
+    // componentWillMount(){
+    //     this.loadFoods();
+    // }
+
+    // loadFoods = () => {
+    //     API.getFoods()
+    //     .this(res =>
+    //     this.setState({ cartData: res.data, addedProductTitle: "", addedProductPrice: ""})
+    //     )
+    //     .catch(err => console.log(err));
+    // };
 
     handleAddedProduct = (event) => {
         this.setState({ ProductTitle: event.target.value });
@@ -73,17 +86,24 @@ class Cart extends Component {
 
     addToCart = (event) => {
         event.preventDefault();
-        alert(event.target.value);
+        
         this.setState({
             AddedProductId: event.target.id,
-            AddedProductPrice: event.target.value,
+            AddedProductTitle: event.target.title,
+            AddedProductPrice: event.target.value
         });
+        alert(event.target.value);
+        console.log(this.state.AddedProductId);
+        console.log(this.state.AddedProductTitle);
+        console.log(this.state.AddedProductPrice);
+        // this.addToCartDatabase();
     };
 
     addToCartDatabase = () => {
-        axios.post('', {
+        console.log(this.stateAddedProductTitle)
+        axios.post('/api/cart', {
             AddedProductTitle: this.state.AddedProductTitle,
-            AddedProductPrice: this.state.AddedProductPrice,
+            AddedProductPrice: this.state.AddedProductPrice
             })
             .then(response => {
                 console.log(response, "Product Added to Cart!");
@@ -109,6 +129,7 @@ class Cart extends Component {
                         <button
                             className="submitproducttocart"
                             type="submit"
+                            title={cartItem.title}
                             id={cartItem.id}
                             value={cartItem.price}
                             onClick={this.addToCart}

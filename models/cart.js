@@ -7,11 +7,11 @@ const Schema = mongoose.Schema;
 
 const cartSchema = new Schema({
 
-    title: {
+    AddedProductTitle: {
       type: String,
       required: true
     },
-    price:{
+    AddedProductPrice: {
       type: Number,
     }
 
