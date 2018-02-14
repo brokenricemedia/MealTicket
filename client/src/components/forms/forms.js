@@ -91,11 +91,14 @@ class RegistrationForm extends React.Component {
     ));
 
     return (
+      <div className="Container loginContainer">
+        <div className="row">
+        <div className="col-md-offset-3 col-md-9">
       <Form className="glitter" onSubmit={this.handleSubmit}>
       
               <FormItem
           {...formItemLayout}
-          label="First Name"
+          label=""
         >
           {getFieldDecorator('firstname', {
             rules: [{
@@ -104,12 +107,12 @@ class RegistrationForm extends React.Component {
               required: true, message: 'First name is required',
             }],
           })(
-            <Input />
+            <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="First Name" />
           )}
         </FormItem>
           <FormItem
           {...formItemLayout}
-          label="Last Name"
+          label=""
         >
           {getFieldDecorator('lastname', {
             rules: [{
@@ -118,12 +121,12 @@ class RegistrationForm extends React.Component {
               required: true, message: 'Last name is required',
             }],
           })(
-            <Input />
+            <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Last Name" />
           )}
         </FormItem>
         <FormItem
           {...formItemLayout}
-          label="User Name"
+          label=""
         >
           {getFieldDecorator('username', {
             rules: [{
@@ -132,12 +135,12 @@ class RegistrationForm extends React.Component {
               required: true, message: 'User name is required',
             }],
           })(
-            <Input />
+            <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Username" />
           )}
         </FormItem>
         <FormItem
           {...formItemLayout}
-          label="E-mail"
+          label=""
         >
           {getFieldDecorator('email', {
             rules: [{
@@ -146,12 +149,12 @@ class RegistrationForm extends React.Component {
               required: true, message: 'Please input your E-mail!',
             }],
           })(
-            <Input />
+            <Input prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Mail"/>
           )}
         </FormItem>        
         <FormItem
           {...formItemLayout}
-          label="Password"
+          label=""
         >
           {getFieldDecorator('password', {
             rules: [{
@@ -160,12 +163,12 @@ class RegistrationForm extends React.Component {
               validator: this.checkConfirm,
             }],
           })(
-            <Input type="password" />
+            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
           )}
         </FormItem>
         <FormItem
           {...formItemLayout}
-          label="Confirm Password"
+          label=""
         >
           {getFieldDecorator('confirm', {
             rules: [{
@@ -174,13 +177,16 @@ class RegistrationForm extends React.Component {
               validator: this.checkPassword,
             }],
           })(
-            <Input type="password" onBlur={this.handleConfirmBlur} />
+            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" onBlur={this.handleConfirmBlur} />
           )}
         </FormItem>
-        <FormItem {...tailFormItemLayout}>
-          <Button type="primary" htmlType="submit">Register</Button>
+        <FormItem {...formItemLayout}>
+          <Button className= "register" type="primary" htmlType="submit">Register</Button>
         </FormItem>
       </Form>
+      </div>
+        </div>
+      </div>
     );
   }
 }

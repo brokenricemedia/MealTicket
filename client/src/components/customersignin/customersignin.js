@@ -1,6 +1,16 @@
 import React from 'react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
 import API from "../../utils/loginAPI";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect,
+  withRouter
+} from "react-router-dom";
+import "./customersignin.css"
+
+
 const FormItem = Form.Item;
 const Option = Select.Option;
 const AutoCompleteOption = AutoComplete.Option;
@@ -17,7 +27,11 @@ class RegistrationForm extends React.Component {
       if (!err) {
         console.log('Received values of form: ', loginUser);
         API.loginUser(loginUser)
-          .then()
+          .then({
+            // if(res.status===200){
+            //   <Redirect push to="/api/login"/>
+            // }
+          })
           .catch();
       }
 
@@ -86,13 +100,15 @@ class RegistrationForm extends React.Component {
 
     return (
   
-  
+      <div className="Container signInContainer">
+      <div className="row">
+      <div className="col-md-offset-3 col-md-9">
       <Form className="glitter" onSubmit={this.handleSubmit}>
 
 
         <FormItem
           {...formItemLayout}
-          label="E-mail"
+          label=""
         >
           {getFieldDecorator('email', {
             rules: [{
@@ -101,14 +117,14 @@ class RegistrationForm extends React.Component {
               required: true, message: 'Please input your E-mail!',
             }],
           })(
-            <Input />
+            <Input prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Mail"/>
           )}
         </FormItem>
 
         
         <FormItem
           {...formItemLayout}
-          label="Password"
+          label=""
         >
           {getFieldDecorator('password', {
             rules: [{
@@ -117,12 +133,12 @@ class RegistrationForm extends React.Component {
               validator: this.checkConfirm,
             }],
           })(
-            <Input type="password" />
+            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password"/>
           )}
         </FormItem>
         <FormItem
           {...formItemLayout}
-          label="Confirm Password"
+          label=""
         >
           {getFieldDecorator('confirm', {
             rules: [{
@@ -131,17 +147,17 @@ class RegistrationForm extends React.Component {
               validator: this.checkPassword,
             }],
           })(
-            <Input type="password" onBlur={this.handleConfirmBlur} />
+            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" onBlur={this.handleConfirmBlur} />
           )}
         </FormItem>
 
-        <FormItem {...tailFormItemLayout}>
+        <FormItem {...formItemLayout}>
           <Button type="primary" htmlType="submit">Login</Button>
           </FormItem>
-        <FormItem {...tailFormItemLayout}>
-          <Button type="primary" htmlType="submit">Register</Button>
-        </FormItem>
       </Form>
+      </div>
+        </div>
+      </div>
     );
   }
 }

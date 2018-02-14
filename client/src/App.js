@@ -23,15 +23,19 @@ import Cart from './containers/Cart';
 import ProductList from './containers/ProductList';
 import NavBar from './components/navbar';
 import ProductPage from './components/ProductPage';
+import BackgroundImage from './components/backgroundimage'
 
 class App extends Component {
   render() {
     return (
 
-        <Router>
+        <Router>  
             <div className="App">
+            <BackgroundImage />
             <NavBar />
+            <Route path="/" exact component={Forms} />
             <Route path="/home" component={ProductPage} />
+            <Route path="/login" component={WrappedLogin} />
             {/* <Route path="/productpage" component={Cart} /> */}
             {/* <Route path="/productlist" component={ProductList} /> */}
             </div>
