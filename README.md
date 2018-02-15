@@ -21,9 +21,9 @@ MealTicket is a MERN stack e-Commerce web app that sells homemade dishes and bak
 This application is a final group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. 
 
 ### Collaborators
-+ **Backend**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
-+ **Frontend**: [Juanita Pinkney](https://www.github.com/juanitanpinkney) and [Brian Peace](https://www.github.com/bpeace71)
-+ **Frontend and Project Management**: [Keli Chau](https://www.github.com/kelichau)
++ **Back End**: [Jay Huang](https://www.github.com/aznprox) and [Brad Whitcomb](https://www.github.com/)
++ **Front End**: [Juanita Pinkney](https://www.github.com/juanitanpinkney) and [Brian Peace](https://www.github.com/bpeace71)
++ **Front End and Project Management**: [Keli Chau](https://www.github.com/kelichau)
 
 ### Requirements
 + Must use React.js for entire app
@@ -38,7 +38,7 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 + Must meet good quality coding standards (indentation, scoping, naming)
 + Must not expose sensitive API key information on the server
 
-### User Story
+## Future Development
 1. Users can create an account and login as a vendor or consumer or browse products  without an account or limitations
 
 2. Vendor View
@@ -60,9 +60,7 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 4. Product results page will show based on user search by location, product name, or vendor name
 
-## Future Development
-+ Paypal or Stripe Payment Integration
-+ Expand web app to a platform where local home chefs can create account as vendors to sell their products
+5. Paypal or Stripe Payment Integration
 
 ## Contributing
 1. Fork this repository
