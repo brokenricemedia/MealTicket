@@ -78,7 +78,6 @@ This application is a final group project for [GA Tech's Coding Boot Camp](https
 
 ## Acknowledgments
 + [Ant Design](https://ant.design/) framework 
-+ [Tsuyoshi Wada](https://www.github.com/tsuyoshiwada), full stack web developer, for React Stack Grid on products page
 + [GitHub](http://www.github.com)
 + [Heroku](http://www.heroku.com)
 
