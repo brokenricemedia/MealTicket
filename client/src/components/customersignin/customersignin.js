@@ -118,12 +118,12 @@ class RegistrationForm extends React.Component {
         >
           {getFieldDecorator('email', {
             rules: [{
-              type: 'email', message: 'The input is not valid E-mail!',
+              type: 'email', message: 'The input is not valid Email!',
             }, {
-              required: true, message: 'Please input your E-mail!',
+              required: true, message: 'Please input your Email!',
             }],
           })(
-            <Input prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Mail"/>
+            <Input prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Email"/>
           )}
         </FormItem>
 
@@ -153,7 +153,7 @@ class RegistrationForm extends React.Component {
               validator: this.checkPassword,
             }],
           })(
-            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" onBlur={this.handleConfirmBlur} />
+            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Confirm Password" onBlur={this.handleConfirmBlur} />
           )}
         </FormItem>
 
