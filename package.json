@@ -26,6 +26,7 @@
     "react-dynamic-forms": "^0.15.0",
     "react-materialize": "^1.1.2",
     "react-redux": "^5.0.6",
+    "react-stack-grid": "^0.7.1",
     "react-tap-event-plugin": "^3.0.2",
     "redux": "^3.7.2"
   },

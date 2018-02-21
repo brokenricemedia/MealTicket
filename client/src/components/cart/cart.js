@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CartItem from './cartitem';
+import CartItem from './CartItem';
 
 
 const Cart = ({ items, total, currency, removeFromCart }) => {
