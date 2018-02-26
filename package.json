@@ -33,12 +33,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KeliChau/MealTicket.git"
+    "url": "git+https://juanitapinkney.github.io/MealTicket"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KeliChau/MealTicket/issues"
+    "url": "https://juanitapinkney.github.io/MealTicket/issues"
   },
-  "homepage": "https://github.com/KeliChau/MealTicket#readme"
+  "homepage": "https://juanitapinkney.github.io/MealTicket"
 }
