@@ -1,7 +1,7 @@
 {
   "name": "mealticket",
   "version": "1.0.0",
-  "description": "## Overview",
+  "description": "MealTicket",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
